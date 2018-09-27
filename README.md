@@ -2,10 +2,6 @@
 [![dependency status](https://img.shields.io/david/gcanti/tcomb-form-native.svg?style=flat-square)](https://david-dm.org/gcanti/tcomb-form-native)
 ![npm downloads](https://img.shields.io/npm/dm/tcomb-form-native.svg)
 
-# Notice
-
-`tcomb-form-native` is looking for maintainers. If you're interested in helping, a great way to get started would just be to start weighing-in on [GitHub issues](https://github.com/gcanti/tcomb-form-native/issues), reviewing and testing some [PRs](https://github.com/gcanti/tcomb-form-native/pulls).
-
 # Contents
 
 - [Setup](#setup)
@@ -125,6 +121,11 @@ var styles = StyleSheet.create({
     marginTop: 50,
     padding: 20,
     backgroundColor: '#ffffff',
+  },
+  title: {
+    fontSize: 30,
+    alignSelf: 'center',
+    marginBottom: 30
   },
   buttonText: {
     fontSize: 18,
@@ -542,19 +543,6 @@ var Person = t.struct({
 
 Dates are displayed as `DatePickerIOS`s under iOS and `DatePickerAndroid` or `TimePickerAndroid` under Android, depending on the `mode` selected (`date` or `time`).
 
-Under Android, use the `fields` option to configure which `mode` to display the Picker:
-
-```js
-// see the "Rendering options" section in this guide
-var options = {
-  fields: {
-    birthDate: {
-      mode: 'date' // display the Date field as a DatePickerAndroid
-    }
-  }
-};
-```
-
 #### iOS date `config` option
 
 The bundled template will render an iOS `UIDatePicker` component, but collapsed into a touchable component in order to improve usability. A `config` object can be passed to customize it with the following parameters:
@@ -564,7 +552,6 @@ The bundled template will render an iOS `UIDatePicker` component, but collapsed 
 | `animation` | The animation to collapse the date picker. Defaults to `Animated.timing`. |
 | `animationConfig` | The animation configuration object. Defaults to `{duration: 200}` for the default animation. |
 | `format` | A `(date) => String(date)` kind of function to provide a custom date format parsing to display the value. Optional, defaults to `(date) => String(date)`.
-| `defaultValueText` | An `string` to customize the default value of the `null` date value text. |
 
 For the collapsible customization, look at the `dateTouchable` and `dateValue` keys in the stylesheet file.
 
@@ -576,8 +563,7 @@ When using a `t.Date` type in Android, it can be configured through a `config` o
 |-----|-------|
 | ``background`` | Determines the type of background drawable that's going to be used to display feedback. Optional, defaults to ``TouchableNativeFeedback.SelectableBackground``. |
 | ``format`` | A ``(date) => String(date)`` kind of function to provide a custom date format parsing to display the value. Optional, defaults to ``(date) => String(date)``.
-| ``dialogMode`` | Determines the type of datepicker mode for Android (`default`, `spinner` or `calendar`). |
-| `defaultValueText` | An `string` to customize the default value of the `null` date value text. |
+| ``dialogMode`` | Determines the type of datepicker mode for Android (`default`, `spinner` or `calendar`).
 
 ### Enums
 
@@ -873,7 +859,6 @@ Age.getValidationErrorMessage = function (value, path, context) {
 
 The following standard options are available (see http://facebook.github.io/react-native/docs/textinput.html):
 
-- `allowFontScaling`
 - `autoCapitalize`
 - `autoCorrect`
 - `autoFocus`
@@ -898,11 +883,7 @@ The following standard options are available (see http://facebook.github.io/reac
 - `selectionState`
 - `textAlign`
 - `textAlignVertical`
-- `textContentType`
-- ~~`underlineColorAndroid`~~
-
-`underlineColorAndroid` is not supported now on `tcomb-form-native` due to random crashes on Android, especially on ScrollView. See more on:
-https://github.com/facebook/react-native/issues/17530#issuecomment-416367184
+- `underlineColorAndroid`
 
 ## Checkbox component
 
@@ -962,36 +943,6 @@ var options = {
   fields: {
     gender: {
       order: 'asc' // or 'desc'
-    }
-  }
-};
-```
-
-### Options isCollapsed
-
-You can determinate if Select is collapsed:
-
-```js
-var options = {
-  fields: {
-    gender: {
-      isCollapsed: false // default: true
-    }
-  }
-};
-```
-
-If option not set, default is `true`
-
-### Options onCollapseChange
-
-You can set a callback, triggered, when collapse change:
-
-```js
-var options = {
-  fields: {
-    gender: {
-      onCollapseChange: () => { console.log('collapse changed'); }
     }
   }
 };
@@ -1596,4 +1547,4 @@ fix added:
 
 # License
 
-[MIT](LICENSE)
+MIT

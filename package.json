@@ -1,40 +1,82 @@
 {
-  "name": "tcomb-form-native",
-  "version": "0.6.18",
-  "description":
-    "react-native powered UI library for developing forms writing less code",
-  "main": "index.js",
-  "scripts": {
-    "lint": "eslint lib",
-    "test": "npm run lint && babel-node test"
+  "_from": "tcomb-form-native",
+  "_id": "tcomb-form-native@0.6.11",
+  "_inBundle": false,
+  "_integrity": "sha512-wFqSsDOe+4ERpmAkNzjFubAna/nhBRpm6Ri3hP4ubZkVVhE7MHhcNMcRQ4+xnTx5DxNJaB1VoSPePUIblJs87Q==",
+  "_location": "/tcomb-form-native",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "tcomb-form-native",
+    "name": "tcomb-form-native",
+    "escapedName": "tcomb-form-native",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gcanti/tcomb-form-native.git"
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/tcomb-form-native/-/tcomb-form-native-0.6.11.tgz",
+  "_shasum": "1fda9d8fc4ed9e954e60f08d4d976ec85e04697e",
+  "_spec": "tcomb-form-native",
+  "_where": "E:\\Projects\\uber_services\\UberServices",
+  "author": {
+    "name": "Giulio Canti",
+    "email": "giulio.canti@gmail.com"
   },
-  "author": "Giulio Canti <giulio.canti@gmail.com>",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/gcanti/tcomb-form-native/issues"
   },
-  "homepage": "https://github.com/gcanti/tcomb-form-native",
+  "bundleDependencies": false,
   "dependencies": {
     "tcomb-validation": "^3.0.0"
   },
+  "deprecated": false,
+  "description": "react-native powered UI library for developing forms writing less code",
   "devDependencies": {
     "@types/eslint-plugin-prettier": "^2.2.0",
     "@types/prettier": "^1.7.0",
     "babel": "5.8.34",
     "babel-core": "5.8.34",
-    "eslint": "^4.19.1",
-    "eslint-config-prettier": "^2.9.0",
-    "eslint-plugin-prettier": "^2.6.0",
+    "eslint": "^4.9.0",
+    "eslint-config-prettier": "^2.6.0",
+    "eslint-plugin-prettier": "^2.3.1",
     "eslint-plugin-react": "2.5.2",
     "prettier": "^1.7.4",
     "prop-types": "^15.5.10",
     "react": "^15.6.1",
     "tape": "3.5.0"
   },
-  "tags": ["tcomb", "form", "forms", "react", "react-native", "react-component"],
-  "keywords": ["tcomb", "form", "forms", "react", "react-native", "react-component"]
+  "homepage": "https://github.com/gcanti/tcomb-form-native",
+  "keywords": [
+    "tcomb",
+    "form",
+    "forms",
+    "react",
+    "react-native",
+    "react-component"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "tcomb-form-native",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gcanti/tcomb-form-native.git"
+  },
+  "scripts": {
+    "lint": "eslint lib",
+    "test": "npm run lint && babel-node test"
+  },
+  "tags": [
+    "tcomb",
+    "form",
+    "forms",
+    "react",
+    "react-native",
+    "react-component"
+  ],
+  "version": "0.6.11"
 }
