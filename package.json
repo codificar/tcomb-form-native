@@ -1,16 +1,18 @@
 {
-  "_from": "tcomb-form-native",
-  "_id": "tcomb-form-native@0.6.11",
+  "name": "tcomb-form-native-codificar",
+  "version": "0.1.0",
+  "_from": "tcomb-form-native-codificar",
+  "_id": "tcomb-form-native-codificar@0.1.0",
   "_inBundle": false,
   "_integrity": "sha512-wFqSsDOe+4ERpmAkNzjFubAna/nhBRpm6Ri3hP4ubZkVVhE7MHhcNMcRQ4+xnTx5DxNJaB1VoSPePUIblJs87Q==",
-  "_location": "/tcomb-form-native",
+  "_location": "/tcomb-form-native-codificar",
   "_phantomChildren": {},
   "_requested": {
     "type": "tag",
     "registry": true,
-    "raw": "tcomb-form-native",
-    "name": "tcomb-form-native",
-    "escapedName": "tcomb-form-native",
+    "raw": "tcomb-form-native-codificar",
+    "name": "tcomb-form-native-codificar",
+    "escapedName": "tcomb-form-native-codificar",
     "rawSpec": "",
     "saveSpec": null,
     "fetchSpec": "latest"
@@ -19,16 +21,16 @@
     "#USER",
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/tcomb-form-native/-/tcomb-form-native-0.6.11.tgz",
-  "_shasum": "1fda9d8fc4ed9e954e60f08d4d976ec85e04697e",
-  "_spec": "tcomb-form-native",
-  "_where": "E:\\Projects\\uber_services\\UberServices",
+  "_resolved": "",
+  "_shasum": "",
+  "_spec": "tcomb-form-native-codificar",
+  "_where": "",
   "author": {
-    "name": "Giulio Canti",
-    "email": "giulio.canti@gmail.com"
+    "name": "Codificar",
+    "email": "git@codificar.com.br"
   },
   "bugs": {
-    "url": "https://github.com/gcanti/tcomb-form-native/issues"
+    "url": "https://github.com/codificar/tcomb-form-native/issues"
   },
   "bundleDependencies": false,
   "dependencies": {
@@ -50,7 +52,7 @@
     "react": "^15.6.1",
     "tape": "3.5.0"
   },
-  "homepage": "https://github.com/gcanti/tcomb-form-native",
+  "homepage": "https://codificar.com.br",
   "keywords": [
     "tcomb",
     "form",
@@ -61,10 +63,9 @@
   ],
   "license": "MIT",
   "main": "index.js",
-  "name": "tcomb-form-native",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gcanti/tcomb-form-native.git"
+    "url": "git+https://github.com/codificar/tcomb-form-native.git"
   },
   "scripts": {
     "lint": "eslint lib",
@@ -77,6 +78,6 @@
     "react",
     "react-native",
     "react-component"
-  ],
-  "version": "0.6.11"
+  ]
+  
 }
