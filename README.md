@@ -19,7 +19,7 @@
 # Setup
 
 ```
-npm install tcomb-form-native
+npm install tcomb-form-native-codificar
 ```
 
 # Supported react-native versions
