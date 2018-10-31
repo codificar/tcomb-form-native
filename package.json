@@ -34,6 +34,7 @@
   },
   "bundleDependencies": false,
   "dependencies": {
+    "react-native-text-input-mask": "^0.8.0",
     "tcomb-validation": "^3.0.0"
   },
   "deprecated": false,
@@ -79,5 +80,4 @@
     "react-native",
     "react-component"
   ]
-  
 }
