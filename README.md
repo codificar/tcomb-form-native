@@ -26,10 +26,17 @@ npm install tcomb-form-native
 
 | Version | React Native Support | Android Support | iOS Support |
 |---|---|---|---|
+| 0.2.2+ (codificar) | 0.73+ / React 18–19 | modern | modern |
 | 0.5 - 0.6.1 | 0.25.0 - 0.35.0 | 7.1 | 10.0.2 |
 | 0.4 | 0.20.0 - 0.24.0 | 7.1 | 10.0.2 |
 | 0.3 | 0.1.0 - 0.13.0  | 7.1 | 10.0.2 |
 *Complies with [react-native-version-support-table](https://github.com/dangnelson/react-native-version-support-table)*
+
+### React 19 / masked text
+
+From `0.2.2`, string refs are gone and bootstrap templates pass `locals.inputRef`. Masked fields use `react-native-masked-text` via `refInput`.
+
+On React 19, if that package still spreads `{...this.props}` onto the inner `TextInput`, a string `ref` can come back and break focus/`getComponent(...).refs.input`. Patch `react-native-masked-text` so it omits `ref` from the spread and always forwards `refInput` on the internal callback ref (see typical `patch-package` fix for `1.13.0`).
 
 ### Domain Driven Forms
 

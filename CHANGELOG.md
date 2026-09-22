@@ -10,6 +10,19 @@
 
 **Note**: Gaps between patch versions are faulty/broken releases.
 
+## 0.2.2
+
+- **Bug Fix**
+    - React 19: avoid assigning to read-only `refs` via `_legacyRefs` + getter/setter + callback refs
+    - replace string refs with `locals.inputRef` in bootstrap templates
+    - iOS datepicker: use `@react-native-community/datetimepicker` instead of removed `DatePickerIOS`
+    - Switch: use `trackColor` / `thumbColor` instead of deprecated tint props
+- **Polish**
+    - rename `componentWillReceiveProps` → `UNSAFE_componentWillReceiveProps`
+    - declare peerDependencies for React 19 / RN 0.73+ and related native modules
+- **Documentation**
+    - note React 19 integration requirement for `react-native-masked-text` (`refInput`)
+
 ## 0.6.11
 
 - **New Feature**

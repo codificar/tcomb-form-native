@@ -1,6 +1,6 @@
 {
   "name": "tcomb-form-native-codificar",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "_from": "tcomb-form-native-codificar",
   "_id": "tcomb-form-native-codificar@0.1.0",
   "_inBundle": false,
@@ -64,6 +64,14 @@
   ],
   "license": "MIT",
   "main": "index.js",
+  "peerDependencies": {
+    "react": ">=18",
+    "react-native": ">=0.73",
+    "@react-native-community/datetimepicker": ">=7",
+    "@react-native-picker/picker": ">=2",
+    "react-native-masked-text": ">=1.13.0",
+    "prop-types": ">=15"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/codificar/tcomb-form-native.git"
